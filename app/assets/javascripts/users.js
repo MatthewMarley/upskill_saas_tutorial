@@ -16,8 +16,8 @@ $(document).on('turbolinks:load', function(){
         //Collect the credit card fields.
         var ccNum = $('#card_number').val(),
             cvcNum = $('#card_code').val(),
-            expMonth = $('card_month').val(),
-            expYear = $('card_year').val();
+            expMonth = $('#card_month').val(),
+            expYear = $('#card_year').val();
             
         //Use Stripe JS library to check for card errors.
         var error = false;
